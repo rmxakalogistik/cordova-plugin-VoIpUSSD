@@ -1,0 +1,32 @@
+{
+  "name": "cordova-plugin-VoIpUSSD",
+  "version": "0.0.1",
+  "description": "A android cordova plugin version of VoIpUSSD.",
+  "cordova": {
+    "id": "cordova-plugin-VoIpUSSD",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmxakalogistik/cordova-plugin-VoIpUSSD.git"
+  },
+  "keywords": [
+    "ussd",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Ramy Mokako <ramymokako@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rmxakalogistik/cordova-plugin-VoIpUSSD/issues"
+  },
+  "homepage": "https://github.com/rmxakalogistik/cordova-plugin-VoIpUSSD/"
+}
