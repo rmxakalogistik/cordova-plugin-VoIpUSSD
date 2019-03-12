@@ -23,7 +23,7 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="VoIpUSSD">
-                <param name="android-package" value="com.ramymokako.plugin.ussd.VoIpUSSD"/>
+                <param name="android-package" value="com.ramymokako.plugin.ussd.android.VoIpUSSD"/>
             </feature>
         </config-file>
 
