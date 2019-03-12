@@ -15,8 +15,8 @@
         <engine name="cordova" version=">=3.0.0"/>
     </engines>
   
-    <js-module src="www/voIpUSSDPlugin.js" name="voIpUSSDPlugin">
-        <clobbers target="window.plugins.voIpUSSDPlugin" />
+    <js-module src="www/VoIpUSSDPlugin.js" name="VoIpUSSDPlugin">
+        <clobbers target="window.plugins.VoIpUSSDPlugin" />
     </js-module>
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
@@ -25,6 +25,7 @@
             </feature>
         </config-file>
 
-        <source-file src="src/android/VoIpUSSDPlugin.java" target-dir="src/com/ramymokako/cordova/plugin" />
+        <!--<source-file src="src/android/VoIpUSSDPlugin.java" target-dir="src/com/ramymokako/cordova/plugin" />-->
+        <source-file src="src/android" target-dir="app/src/main/java/com/ramymokako/cordova/plugin" />
     </platform>
 </plugin>
