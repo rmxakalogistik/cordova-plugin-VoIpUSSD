@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="cordova-plugin-VoIpUSSD" version="0.0.1">
-    <name>VoIpUSSDPlugin</name>
+        id="com-ramymokako-ussd-plugin" version="0.0.1">
+    <name>Ramy Mokako USSD Plugin</name>
 
     <description>A android cordova plugin version of VoIpUSSD.</description>
     <license>MIT</license>
@@ -15,18 +15,19 @@
         <engine name="cordova" version=">=3.0.0"/>
     </engines>
   
-    <js-module src="www/VoIpUSSDPlugin.js" name="VoIpUSSDPlugin">
-        <clobbers target="window.plugins.VoIpUSSDPlugin" />
+    <js-module src="www/voIpUSSD.js" name="VoIpUSSD">
+        <clobbers target="window.plugins.voIpUSSD" />
     </js-module>
+  
+   <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="VoIpUSSDPlugin">
-                <param name="android-package" value="com.ramymokako.cordova.plugin.VoIpUSSDPlugin"/>
+            <feature name="VoIpUSSD">
+                <param name="android-package" value="com.ramymokako.plugin.ussd.VoIpUSSD"/>
             </feature>
         </config-file>
 
-        <!--<source-file src="src/android/VoIpUSSDPlugin.java" target-dir="src/com/ramymokako/cordova/plugin" />-->
-        <source-file src="src/android" target-dir="app/src/main/java/com/ramymokako/cordova/plugin" />
-        <!--<source-file src="src/android/VoIpUSSDPlugin.java" target-dir="src/com/ramymokako/cordova/plugin" />-->
+        <source-file src="src/android" target-dir="src/com/ramymokako/plugin/ussd" />
     </platform>
+
 </plugin>

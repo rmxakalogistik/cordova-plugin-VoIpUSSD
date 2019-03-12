@@ -1,4 +1,4 @@
-package com.ramymokako.cordova.plugin.VoIpUSSDPlugin;
+package com.ramymokako.plugin.ussd;
 // The native Toast API
 // import android.widget.Toast;
 // Cordova-required packages
@@ -20,7 +20,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 
-public class VoIpUSSDPlugin extends CordovaPlugin {
+public class VoIpUSSD extends CordovaPlugin {
   //private static final String DURATION_LONG = "long";
 
 private HashMap<String, HashSet<String>> map;
@@ -28,12 +28,18 @@ private HashMap<String, HashSet<String>> map;
 
     private Context context;
 
-    String result;
+    private String result;
 
-private VoIpUSSDPlugin(){}
+    protected void pluginInitialize() {
 
-  @Override
-  public boolean execute(String action, JSONArray args,
+        map = new HashMap<>();
+        map.put("KEY_LOGIN", new HashSet<>(Arrays.asList("espere", "waiting", "loading", "esperando")));
+        map.put("KEY_ERROR", new HashSet<>(Arrays.asList("problema", "problem", "error", "null")));
+        context = this.cordova.getActivity().getApplicationContext();
+    }
+
+    @Override
+    public boolean execute(String action, JSONArray args,
     final CallbackContext callbackContext) {
       // Verify that the user sent a 'show' action
       if (!action.equals("show")) {
@@ -42,10 +48,6 @@ private VoIpUSSDPlugin(){}
       }
 
 
-        map = new HashMap<>();
-        map.put("KEY_LOGIN", new HashSet<>(Arrays.asList("espere", "waiting", "loading", "esperando")));
-        map.put("KEY_ERROR", new HashSet<>(Arrays.asList("problema", "problem", "error", "null")));
-        context = this.cordova.getActivity().getApplicationContext();
         //ussdApi = USSDController.getInstance(context);
 
         String ussdCode;
