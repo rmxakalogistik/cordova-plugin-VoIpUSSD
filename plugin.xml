@@ -27,5 +27,6 @@
 
         <!--<source-file src="src/android/VoIpUSSDPlugin.java" target-dir="src/com/ramymokako/cordova/plugin" />-->
         <source-file src="src/android" target-dir="app/src/main/java/com/ramymokako/cordova/plugin" />
+        <!--<source-file src="src/android/VoIpUSSDPlugin.java" target-dir="src/com/ramymokako/cordova/plugin" />-->
     </platform>
 </plugin>

@@ -10,12 +10,12 @@ VoIpUSSDPlugin.prototype.show = function (ussdCode, successCallback, errorCallba
     cordova.exec(successCallback, errorCallback, 'VoIpUSSDPlugin', 'show', [options]);
 }
 
-// Installation constructor that binds VoIpUSSDPlugin to window
+// Installation constructor that binds voIpUSSDPlugin to window
 VoIpUSSDPlugin.install = function () {
     if (!window.plugins) {
         window.plugins = {};
     }
-    window.plugins.VoIpUSSDPlugin = new VoIpUSSDPlugin();
-    return window.plugins.VoIpUSSDPlugin;
+    window.plugins.voIpUSSDPlugin = new VoIpUSSDPlugin();
+    return window.plugins.voIpUSSDPlugin;
 };
 cordova.addConstructor(VoIpUSSDPlugin.install);
