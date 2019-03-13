@@ -1,9 +1,9 @@
 {
-  "name": "com-ramymokako-plugin-ussd",
+  "name": "cordova-plugin-VoIpUSSD",
   "version": "0.0.1",
   "description": "A android cordova plugin version of VoIpUSSD.",
   "cordova": {
-    "id": "com-ramymokako-plugin-ussd",
+    "id": "cordova-plugin-VoIpUSSD",
     "platforms": [
       "android"
     ]
