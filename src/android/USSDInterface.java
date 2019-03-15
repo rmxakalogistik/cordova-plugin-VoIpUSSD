@@ -1,4 +1,6 @@
-package com.romellfudi.ussdlibrary;
+//package com.romellfudi.ussdlibrary;
+
+package com.ramymokako.plugin.ussd.android;
 
 /**
  * Interface ussd handler
