@@ -49,4 +49,4 @@ window.plugins.voIpUSSD.show('*105#', function (data) {
 ```
 ## Authors
 
-* **Ramy Mokako** - *Initial work* - [Romell Domínguez](https://www.romellfudi.com/)
+* **Ramy Mokako** - *Initial work* - [Romell Domínguez](https://github.com/romellfudi/VoIpUSSD/#by-romell-dominguez)
