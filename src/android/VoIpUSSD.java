@@ -3,8 +3,8 @@ package com.ramymokako.plugin.ussd.android;
 import android.Manifest.permission;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+//import android.support.annotation.NonNull;
+//import android.support.annotation.Nullable;
 import android.util.Log;
 import android.widget.Toast;
 import org.apache.cordova.CallbackContext;
@@ -23,7 +23,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import android.content.pm.PackageManager;
 
-import io.sybox.easyshare.MainActivity;
+import io.sybox.easyshare.MainActivity; //(io.sybox.easyshare: this must be replaced by the name of your main package)
 
 public class VoIpUSSD extends CordovaPlugin {
 
