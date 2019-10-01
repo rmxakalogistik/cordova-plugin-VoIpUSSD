@@ -9,11 +9,6 @@ cordova plugin add https://github.com/rmxakalogistik/cordova-plugin-VoIpUSSD.git
 
 
 ## Configuration
-### On line 26 of *src/android/VoIpUSSD.java* file
-* Replace `io.sybox.easyshare` by the name of your Main Package
-```
-import io.sybox.easyshare.MainActivity; //(io.sybox.easyshare: this must be replaced by the name of your main package)
-```
 ### On *AndroidManifest.xml* file
 * Add service:
 ```
