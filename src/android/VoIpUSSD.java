@@ -23,7 +23,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import android.content.pm.PackageManager;
 
-import io.sybox.easyshare.MainActivity; //(io.sybox.easyshare: this must be replaced by the name of your main package)
+//import io.sybox.easyshare.MainActivity; //(io.sybox.easyshare: this must be replaced by the name of your main package)
 
 public class VoIpUSSD extends CordovaPlugin {
 
